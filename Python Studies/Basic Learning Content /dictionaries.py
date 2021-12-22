@@ -51,6 +51,21 @@ car =	{
 }
 car.clear()
 
+#----------------------------------------------
+#ways to print the dictionary
+fruits = {
+"cor": "preto",
+"texture": "fino!",
+"sla": "sslaa"
 
-
-
+}
+print(fruits)
+# or:
+for key,value in fruits.items():
+	print(key, ':', value)
+#or:
+for key in fruits.keys():
+	print(key)
+#or:
+for value in fruits.values():
+	print(value)
