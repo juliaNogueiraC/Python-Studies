@@ -174,6 +174,7 @@ del thislist[0]
 print(thislist)
 
 
+
 # the clear method will empty the entire list 
 thislist = ["apple", "banana", "cherry"]
 thislist.clear()

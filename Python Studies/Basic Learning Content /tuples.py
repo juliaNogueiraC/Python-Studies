@@ -66,3 +66,61 @@ print(thistuple)
 #Note: When creating a tuple with only one item, remember to include a comma after the item, otherwise it will not be identified as a tuple.
 
 #----------------------------------------------
+#REMOVE ITEMS 
+#Tuples are unchangeable, so you cannot remove items from it, but you can use the same workaround as we used for changing and adding tuple items:
+
+#Convert the tuple into a list, remove "apple", and convert it back into a tuple:
+
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
+
+#The del keyword can delete the tuple completely:
+
+thistuple = ("apple", "banana", "cherry")
+del thistuple
+#----------------------------------------------
+#Using Asterisk
+#If the number of variables is less than the number of values, you can add an * to the variable name and the values will be assigned to the variable as a list:
+
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(green, yellow, *red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+#----------------------------------------------
+# LOOP TUPLES
+#Iterate through the items and print the values:
+
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+  print(x)
+
+#Print all items by referring to their index number:
+
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+  print(thistuple[i])
+
+#Print all items, using a while loop to go through all the index numbers:
+
+thistuple = ("apple", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+  print(thistuple[i])
+  i = i + 1
+
+
+#----------------------------------------------
+#Methods
+
+count()	#Returns the number of times a specified value occurs in a tuple
+
+
+index()#	Searches the tuple for a specified value and returns the position of where it was found
+
+
