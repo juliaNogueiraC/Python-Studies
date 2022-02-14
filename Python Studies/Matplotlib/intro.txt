@@ -1,0 +1,6 @@
+Matplotlib is a low level graph plotting library in python that serves as a visualization utility.
+
+Once Matplotlib is installed, import it in your applications by adding the import module statement:
+ import Matplotlib
+ print(matplotlib.__version__)
+
